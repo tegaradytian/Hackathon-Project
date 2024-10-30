@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEBSITE LEARNING BIOLOGI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="jam.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="icon" href="assets/Bio.png" type="image/png" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <img src="assets/nav.png" alt="Biologi Logo" class="logo-image" />
+        <span>BIOLOGI</span>
+        <div class="clock-notif">
+          <span class="hour_num">08</span>:<span class="min_num">45</span>:<span class="sec_num">06</span> <span class="am_pm">AM</span>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav id="bio-nav">
+      <div class="logo">BioBuzz</div>
+      <div class="bio-menu">
+        <div class="bio-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Bio.png" alt="Logo WEBSITE" class="responsive-img" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hi, Your Friend</p>
+        <h1 class="title">BioBuzz</h1>
+        <p class="section__text__p2">Pembelajaran Berbasis <br> ONLINE</p>
+        <div class="btn-container">
+          <a href="./Materi/index.html" class="btn btn-color-2">Materi</a>
+          <button class="btn btn-color-1" href="#contact">Info Contact</button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/Intagram.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/tegaraditya29_/?hl=en'"
+          />
+          <img
+            src="./assets/figma.jpeg"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://www.figma.com/files/team/1354997770526780386/recents-and-sharing/recently-viewed?fuid=1354997768848790767'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Welcome to our Biology Learning Hub!</p>
+      <h1 class="title">About Us</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/manusia.webp" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <a href="https://www.pijarbelajar.id/blog/sel" target="_blank">
+                <img src="./assets/sel.png" alt="Experience icon" class="icon" />
+              </a>
+              <h3>Struktur Sel</h3>
+              <p>Struktur dan fungsi sel sebagai dasar kehidupan.</p>
+            </div>
+            <div class="details-container">
+              <a href="https://www.biologijk.com/2017/04/struktur-organisasi-kehidupan.html" target="_blank">
+                <img src="./assets/ekosis.png" alt="Education icon" class="icon" />
+              </a>
+              <h3>Ekosistem</h3>
+              <p>Mempelajari interaksi dalam ekosistem dan keseimbangan alam.</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Misi kami adalah membuat pembelajaran biologi menjadi menarik, mudah diakses, dan menginspirasi semua orang.
+              Baik Anda seorang pelajar, guru, atau sekadar penggemar biologi, kami hadir untuk membantu Anda menjelajahi keajaiban ilmu kehidupan.
+              Konten kami mencakup segala hal, mulai dari struktur sel hingga ekosistem yang kompleks, memberikan panduan komprehensif tentang dunia biologi.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:examplemail@gmail.com">tegaradytian@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/Intagram.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.instagram.com/tegaraditya29_/?hl=en">Instagram</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+
+    <section id="contact">
+      <div class="p">
+        <p>Copyright &#169; 2024 Tegar Adytia. All Rights Reserved.</p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="jam.js"></script>
+  </body>
+</html>
